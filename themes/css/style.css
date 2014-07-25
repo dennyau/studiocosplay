@@ -30,15 +30,15 @@ h1.brand {
 .nav li{display:inline-block; float:none;}
 .nav a {padding: 3px 18px;font-size: 23px; display: inline-block; color:#3a494c; font-family: "Myriad Pro";}
 
- #portfolioSection, #ourServices, #blogSection{padding:70px 0 ; }
+ #portfolioSection, #whatWeDo, #blogSection{padding:70px 0 ; }
 .txtR{text-align:right}
 
-#ourServices{background: #fff;text-align: center;border-top: 1px solid #ddd;}
-#ourServices h4 {
+#whatWeDo{background: #fff;text-align: center;border-top: 1px solid #ddd;}
+#whatWeDo h4 {
     margin:25px 0;
 }
 
-#ourServices p {
+#whatWeDo p {
     color: #5E5E5E;
     font-size: 19px;
     line-height: 27px;
