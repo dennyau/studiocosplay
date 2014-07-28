@@ -442,7 +442,7 @@ float:right
 }
 p {
 	margin:0 0 10px;
-	font-size:23px; font-family:"Myriad Pro"; color:#515151; line-height:27px;
+	font-size:23px; color:#515151; line-height:27px;
 	
 }
 .lead {
@@ -492,7 +492,6 @@ a.text-success:hover {
 }
 h1, h2, h3, h4, h5, h6 {
 	margin:10px 0;
-	font-family:"Myriad Pro";
 	font-weight:bold;
 	line-height:20px;
 	color:#323232;
