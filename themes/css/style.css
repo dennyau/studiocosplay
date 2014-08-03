@@ -44,6 +44,14 @@ h1.brand {
 .nav li{display:inline-block; float:none;}
 .nav a {padding: 3px 18px;font-size: 23px; display: inline-block; color:#3a494c;}
 
+#headerSection {
+    background-color: #a5d2da;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
  #portfolioSection, #whatWeDo, #blogSection{padding:70px 0 ; }
 .txtR{text-align:right}
 
@@ -104,9 +112,9 @@ h1.brand {
 #meetourteamSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
 #meetourteamSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
 #meetourteamSection .thumbnails > li.span4{ width:350px;}
-#meetourteamSection .thumbnails a.twitter{ height:56px; width:56px; background:url(../img/thum-t-icon.png) no-repeat center center;display:inline-block;}
-#meetourteamSection .thumbnails a.facebook{ height:56px; width:56px; background:url(../img/thum-f-icon.png) no-repeat center center; display:inline-block;}
-#meetourteamSection .thumbnails a.pin{ height:56px; width:56px; background:url(../img/thum-p-icon.png) no-repeat center center;display:inline-block;}
+#meetourteamSection .thumbnails a.twitter{ height:56px; width:56px; background:url(../img/twitter_F-white.png) no-repeat center center;display:inline-block;}
+#meetourteamSection .thumbnails a.facebook{ height:56px; width:56px; background:url(../img/facebook_F-white.png) no-repeat center center; display:inline-block;}
+#meetourteamSection .thumbnails a.pin{ height:56px; width:56px; background:url(../img/pinterest_F-white.png) no-repeat center center;display:inline-block;}
 
 
 #recentpostSection{ padding:70px 0 ; background:#b5d5e1;  text-align: center; }
@@ -172,10 +180,11 @@ h1.brand {
 .socialicon{ margin-top:0px; width:300px; float:left; text-align:left;}
 .socialicon a{ margin-right:20px;}
 .socialicon a:hover{ opacity: 0.6;}
-a.twitter{ height:56px; width:56px; background:url(../img/t-icon.png) no-repeat center center;display:inline-block;}
-a.facebook{ height:56px; width:56px; background:url(../img/f-icon.png) no-repeat center center; display:inline-block;}
-a.html5{ height:56px; width:56px; background:url(../img/icon-1.png) no-repeat center center;display:inline-block;}
-a.icon2{ height:56px; width:56px; background:url(../img/icon-2.png) no-repeat center center;display:inline-block;}
+a.twitter{ height:56px; width:56px; background:url(../img/twitter_F.png) no-repeat center center;display:inline-block;}
+a.facebook{ height:56px; width:56px; background:url(../img/facebook_F.png) no-repeat center center; display:inline-block;}
+a.pin{ height:56px; width:56px; background:url(../img/pinterest_F.png) no-repeat center center; display:inline-block;}
+a.html5{ height:56px; width:56px; background:url(../img/instagram_F.png) no-repeat center center;display:inline-block;}
+a.icon2{ height:56px; width:56px; background:url(../img/email_F.png) no-repeat center center;display:inline-block;}
 
 .footerSection .copyright { text-align:right; color:#a2a3a3;}
 #contactSection .footerSection .copyright p{ color:#a2a3a3;}
