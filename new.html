@@ -27,7 +27,7 @@
             <div class="navbar navbar-static-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" rel="#" title="Studio Cosplay" href="#"><img id="studio-cosplay-logo" src="img/studio-cosplay-logo.jpg" alt="Studio Cosplay Logo" /></a>
+                        <a class="navbar-brand" rel="#" title="Studio Cosplay" href="#"><object id="studio-cosplay-logo" type="image/svg+xml" data="img/studio-cosplay-logo.svg"></object></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
@@ -148,7 +148,12 @@
 
     <div class="row">
         <div class="col-md-4">
-            <img src="themes/img/img-10.png" alt="Liz Gmaz" />
+            <object class="profile" type="image/svg+xml" data="img/liz-cosplay.svg">
+
+            </object>
+<!--
+            <img class="profile" src="img/liz-profile.svg" alt="Liz Gmaz" />
+-->
         </div>
         <div class="col-md-8">
             <h4>Liz Gmaz</h4>
@@ -158,13 +163,12 @@ Liz Gmaz is an actress and cosplayer in the DC Metro Area and brings stage and f
 </p>
             <a class="facebook" href="#"></a>
             <a class="twitter" href="#"></a>
-            <a class="pin" href="#"></a>
         </div>
     </div>
     <hr />
     <div class="row">
         <div class="col-md-4 col-md-push-8">
-            <img src="themes/img/img-10.png" alt="Sabrina Maizland" />
+            <img class="profile" src="themes/img/img-10.png" alt="Sabrina Maizland" />
         </div>
         <div class="col-md-8 col-md-pull-4">
             <h4>Sabrina Maizland</h4>
@@ -174,13 +178,12 @@ Sabrina Maizland has been cosplaying for five years and her Emma Frost has been 
 </p>
             <a class="facebook" href="#"></a>
             <a class="twitter" href="#"></a>
-            <a class="pin" href="#"></a>
         </div>
     </div>
     <hr />
     <div class="row">
         <div class="col-md-4">
-            <img src="themes/img/img-10.png" alt="Daria Medved" />
+            <img class="profile" src="themes/img/img-10.png" alt="Daria Medved" />
         </div>
         <div class="col-md-8">
             <h4>Daria Medved</h4>
@@ -190,13 +193,15 @@ Daria Medved is a Founder of Studio Cosplay with over 20 years of costuming expe
             </p>
             <a class="facebook" href="#"></a>
             <a class="twitter" href="#"></a>
-            <a class="pin" href="#"></a>
         </div>
     </div>
     <hr />
     <div class="row">
         <div class="col-md-4 col-md-push-8">
-            <img src="themes/img/img-10.png" alt="Stefanie Hackenberg" />
+            <object class="profile" type="image/svg+xml" data="img/stef-profile.svg"></object>
+            <!--
+            <img class="profile" src="img/stef-profile.jpg" alt="Stefanie Hackenberg" />
+            -->
         </div>
         <div class="col-md-8 col-md-pull-4">
             <h4>Stefanie Hackenberg</h4>
@@ -206,7 +211,6 @@ Stefanie Hackenberg has been cosplaying since 1998, and has been featured on pro
 </p>
             <a class="facebook" href="#"></a>
             <a class="twitter" href="#"></a>
-            <a class="pin" href="#"></a>
         </div>
     </div>
 </div>
@@ -219,7 +223,28 @@ Stefanie Hackenberg has been cosplaying since 1998, and has been featured on pro
         <div class="row">
             <div class="col-md-12 cntr">
                 <h1>Contact Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. Mauris faucibus tellus ac auctor posuere. </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>We &lt;3 you, talk to us!</p>
+            </div>
+            <div class="col-md-6">
+                <form id="contact-us-form" role="form" action="https://docs.google.com/forms/d/1yljTsrO4C4cQwtQzoYCbXbkDkXeVxQXezf88qdGBGyQ/formResponse" method="POST">
+                    <div class="form-group">
+                        <label for="entry_100831364">Email Address:</label>
+                        <input type="email" class="form-control" id="entry_100831364" name="entry.1008313640" placeholder="email@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="entry_325598639">Subject:</label>
+                        <input type="text" class="form-control" id="entry_325598639" name="entry.325598639" placeholder="An awesome idea">
+                    </div>
+                    <div class="form-group">
+                        <label for="entry_1333836498">Message:</label>
+                        <textarea class="form-control" id="entry_1333836498" name="entry.1333836498" rows="3" placeholder="Everything is awesome, everything is cool when you're part of a team!"></textarea>
+                    </div>
+                    <button type="submit" name="submit" id="ss-submit" class="btn btn-large btn-primary">Send Message</button>
+                </form>
             </div>
         </div>
         <div class="row footerSection">
@@ -230,7 +255,7 @@ Stefanie Hackenberg has been cosplaying since 1998, and has been featured on pro
                 <a class="html5" href="http://www.instagram.com/StudioCosplay/"></a>
             </div>
             <div class="col-sm-6 copyright">
-                <p>Copyright 2014 | Developed By <a href="http://www.tb3.co.in">tB3</a></p>
+                <p>Copyright 2014 | Original Template by  <a href="http://www.tb3.co.in">tB3</a></p>
             </div>
         </div>
     </div>

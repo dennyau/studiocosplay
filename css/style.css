@@ -166,11 +166,21 @@ a.icon2{ height:56px; width:56px; background:url(../img/email_F.png) no-repeat c
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+.profile {
+/*
+    height: 268px;
+*/
+    width:  336px;
+}
+#contact-us-form {
+    color: #fff;
+}
 
-/*     break points */
+/*     break points 
 @media (max-width: 800px) {
     #studio-cosplay-logo {
         max-width: 600px;
         width: 600px;
     }
 }
+*/
