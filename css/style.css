@@ -18,79 +18,10 @@ body{ background:#a5d2da; padding:0; color: #454545;
 a,a:hover{text-decoration:none; color:#FE5214}
 h2,h3{color:#FE5214; text-rendering: optimizelegibility; }
 h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;text-rendering: optimizelegibility;}
-.debug{ border:1px solid #FFCC33;}
-h1.brand {
-    background: none repeat scroll 0 0 #299A0B ;
-    border-radius: 86% 86% 86% 86%;
-    box-shadow: 0 0 4px #000000;
-    color: #FFFFFF;
-    font-size: 41px;
-    height: 100px;
-    line-height: 81px;
-    margin: -87px auto 0;
-    padding: 75px 0 0;
-    text-shadow: 1px 1px 0 #000000;
-    width: 222px;
-}
-
-.span3.logo {
-    padding: 34px 0 0;
-}
 
 .clr{clear:both}
 .cntr{text-align:center}
-/*
-.navbar{margin-bottom:-1px; margin-top:28px; position:relative }
-.navbar .nav, .navbar .nav > li{float:none; text-align:right; margin-left:25px;}
-.nav li{display:inline-block; float:none;}
-.nav a {padding: 3px 18px;font-size: 23px; display: inline-block; color:#3a494c;}
-*/
-#studio-cosplay-logo {
-/*
-    max-height: 80px;
-*/
-    max-height: 30px;
-}
-@media (max-width: 500px) {
-    #studio-cosplay-logo {
-        max-height: auto;
-        max-width: 300px;
-        padding-top: 20px;
-    }
-}
-.navbar .nav > li > a:hover {
-    color: #a8d5dd;
-    text-decoration: none;
-    background-color: #3a494c;
-    border-radius: 8px;
-}
-/*
-.navbar-brand, button.navbar-toggle, .navbar-nav li a {
-    line-height: 80px;
-    height: 80px;
-    padding-top: 0;
-}
-*/
-div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
-/*    min-height: 70px;
-*/
-    background-color: #a5d2da;
-}
-/* Override Bootstrap 3 */
-/*
-.navbar-collapse.collapse { display: block!important; }
-.navbar-nav>li, .navbar-nav { float: left !important; }
-.navbar-nav.navbar-right:last-child { margin-right: -15px !important; }
-.navbar-right { float: right!important; }
-*/
 
-/* Carousel base class */
-/*
-.carousel {
-  height: 500px;
-  margin-bottom: 60px;
-}
-*/
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
@@ -113,23 +44,6 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
   background-image: none;
 }
 
-/* Vertical Carousel for the profile svgs */
-/*
-.vertical .carousel-inner { height: 100%; }
-.carousel.vertical .item {
-  -webkit-transition: 0.6s ease-in-out top;
-     -moz-transition: 0.6s ease-in-out top;
-      -ms-transition: 0.6s ease-in-out top;
-       -o-transition: 0.6s ease-in-out top;
-          transition: 0.6s ease-in-out top;
-}
-.carousel.vertical .active { top: 0; }
-.carousel.vertical .next { top: 100%; }
-.carousel.vertical .prev { top: -100%; }
-.carousel.vertical .next.left, .carousel.vertical .prev.right { top: 0; }
-.carousel.vertical .active.left { top: -100%; }
-.carousel.vertical .active.right { top: 100%; }
-*/
 #portfolioSection, #ourMission, #blogSection{padding:70px 0 ; }
 
 #ourMission {background: #fff;text-align: center;border-top: 1px solid #ddd;}
@@ -214,6 +128,32 @@ a.icon2{ height:56px; width:56px; background:url(../img/email_F.png) no-repeat c
     -webkit-border-radius: 10px;
     border-radius: 10px;
 }
+
+
+/* Studio Cosplay */
+
+/* fit logo to navbar */
+#studio-cosplay-logo {
+    max-height: 30px;
+}
+.navbar .nav > li > a:hover {
+    color: #a8d5dd;
+    text-decoration: none;
+    background-color: #3a494c;
+    border-radius: 8px;
+}
+/*
+.navbar-brand, button.navbar-toggle, .navbar-nav li a {
+    line-height: 80px;
+    height: 80px;
+    padding-top: 0;
+}
+*/
+div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
+/*    min-height: 70px;
+*/
+    background-color: #a5d2da;
+}
 .profile {
     width:  336px;
 }
@@ -224,12 +164,15 @@ a.icon2{ height:56px; width:56px; background:url(../img/email_F.png) no-repeat c
 /* tablet break point */
 @media (max-width: 769px) {
     #studio-cosplay-logo {
-/*
+        max-height: 30px;
+    }
+}
+
+@media (max-width: 500px) {
+    #studio-cosplay-logo {
         max-height: auto;
         max-width: 300px;
         padding-top: 20px;
-*/
-        max-height: 30px;
     }
 }
 /* iphone and up */
