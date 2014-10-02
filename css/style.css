@@ -23,75 +23,59 @@ h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;text-r
 .cntr{text-align:center}
 
 /* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 500px;
-}
-
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 500px;
+.carousel {
+  margin-top: 50px;
 }
 
 .carousel-control.left, .carousel-control.right {
   background-image: none;
 }
 
-#portfolioSection, #ourMission, #blogSection{padding:70px 0 ; }
+#studioCosplay, #ourMission, #blogSection{padding:70px 0 ; }
 
-#ourMission {background: #fff;text-align: center;border-top: 1px solid #ddd;}
-#ourMission h4 { margin:25px 0; }
-#ourMission p { color: #5E5E5E; font-size: 19px; line-height: 27px; }
+#studioCosplay , #blogSection {background: #fff;text-align: center;border-top: 1px solid #ddd;}
+#studioCosplay h4 { margin:25px 0; }
+#studioCosplay p, #blogSection p { color: #5E5E5E; font-size: 19px; line-height: 27px; }
 
-#portfolioSection{background: #99d4a5;text-align: center;}
-#portfolioSection h1{ text-transform:uppercase; color:#fff; padding:0;font-size:60px;}
-#portfolioSection p { color: #fff; font-size: 19px; line-height: 27px; margin: 15px 0; }
-#portfolioSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
+#ourMission {background: #99d4a5;text-align: center;}
+#ourMission h1{ text-transform:uppercase; color:#fff; padding:0;font-size:60px;}
+#ourMission h2{ color:#000; }
+#ourMission p { color: #fff; font-size: 19px; line-height: 27px; margin: 15px 0; }
+#ourMission .span6, #contactUs .span6{ float:none; margin:0 auto; text-align:center;}
 
-#blogSection{background: #fff;}
-#blogSection p{margin:20px 0;}
-#blogSection .span12{ margin:0;margin-bottom: 36px;}
-
-#meetourteamSection{ padding:70px 0 ; background:#ddb3c2;  text-align: center; }
-#meetourteamSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
-#meetourteamSection .thumbnails  p {
+#meetOurTeam{ padding:70px 0 ; background:#ddb3c2;  text-align: center; }
+#meetOurTeam h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
+#meetOurTeam .thumbnails  p {
     color: #909090;
     font-size: 22px;
     line-height: 27px;
     margin:20px 0;
 }
 
-#meetourteamSection  p {
+#meetOurTeam  p {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
     margin: 15px 0;
 }
 
-#meetourteamSection h4 {
+#meetOurTeam h4 {
     font-size: 37px;line-height: 40px; margin:10px 0;
 }
-#meetourteamSection h5 {
+#meetOurTeam h5 {
     font-size: 23px;
 }
-#meetourteamSection .span6, #contactSection .span6{ float:none; margin:0 auto; text-align:center;}
-#meetourteamSection .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
-#meetourteamSection .thumbnails > li.span4{ width:350px;}
-#meetourteamSection a.twitter{ height:56px; width:56px; background:url(../img/twitter_F.png) no-repeat center center;display:inline-block;}
-#meetourteamSection a.facebook{ height:56px; width:56px; background:url(../img/facebook_F.png) no-repeat center center; display:inline-block;}
-#meetourteamSection a.pin{ height:56px; width:56px; background:url(../img/pinterest_F.png) no-repeat center center;display:inline-block;}
+#meetOurTeam .span6, #contactUs .span6{ float:none; margin:0 auto; text-align:center;}
+#meetOurTeam .thumbnails > li{margin-left: 60px; margin-bottom:60px;}
+#meetOurTeam .thumbnails > li.span4{ width:350px;}
+#meetOurTeam a.twitter{ height:56px; width:56px; background:url(../img/twitter_F.png) no-repeat center center;display:inline-block;}
+#meetOurTeam a.facebook{ height:56px; width:56px; background:url(../img/facebook_F.png) no-repeat center center; display:inline-block;}
+#meetOurTeam a.pin{ height:56px; width:56px; background:url(../img/pinterest_F.png) no-repeat center center;display:inline-block;}
 
-#contactSection{ background:#3b3b3b; text-align:center; padding:70px 0 0;}
-#contactSection .span8{ float:none; margin:0 auto;}
-#contactSection h1{ text-transform:uppercase; color:#fff; padding:0;font-size:60px;}
-#contactSection p {
+#contactUs{ background:#3b3b3b; text-align:center; padding:70px 0 0;}
+#contactUs .span8{ float:none; margin:0 auto;}
+#contactUs h1{ text-transform:uppercase; color:#fff; padding:0;font-size:60px;}
+#contactUs p {
     color: #fff;
     font-size: 19px;
     line-height: 27px;
@@ -159,6 +143,8 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
 }
 #contact-us-form {
     color: #fff;
+    max-width: 600px;
+    margin: auto;
 }
 
 /* tablet break point */
@@ -181,10 +167,5 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
         max-height: auto;
         max-width: 230px;
         padding-top: 15px;
-    }
-    .navbar-brand, button.navbar-toggle, .navbar-nav li a {
-        line-height: 50px;
-        height: 50px;
-        padding-top: 0;
     }
 }
