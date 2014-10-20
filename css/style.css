@@ -120,6 +120,18 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
     max-width: 600px;
     margin: auto;
 }
+/* v2.1.1 */
+.carousel-inner .active .overflow-active {
+    max-height: 320px;
+    overflow: hidden;
+}
+.carousel-inner .active img {
+    min-height: 320px;
+    min-width: 100%;
+    height: auto;
+    opacity: 0.35;
+    filter: alpha(opacity=35); /* For IE8 and earlier */
+}
 
 /* iphone and up */
 @media (max-width: 360px) {
