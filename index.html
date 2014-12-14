@@ -49,6 +49,30 @@
         </div><!--/.container-fluid -->
       </div>
 
+<style>
+    #home .carousel-caption {
+        bottom: 65px;
+    }
+    #home .carousel-caption p {
+        color: #545454;
+        font-size: 19px; /* undo break point */
+    }
+    #home .carousel-caption a {
+        color: #4181ba;
+    }
+    .carousel-inner img{
+        height: 253px;
+    }
+    .black {
+        color: #000;
+    }
+    .shadowy {
+        text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    }
+    .fb-iframe {
+        margin-top: 10px;
+    }
+</style>
     <div id="home" class="carousel slide" data-ride="carousel" >
         <div class="carousel-inner">
             <img src="img/parade.png" alt="A Parade in Celebration!" />
@@ -79,51 +103,29 @@
                 </div>
             </div>
         </div>
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#home" data-slide-to="0" class="active"></li>
+          <li data-target="#home" data-slide-to="1"></li>
+          <li data-target="#home" data-slide-to="2"></li>
+        </ol>
     </div>
-
     <div id="studioCosplay">     
         <div class="container">  
             <div class="row"> 
                 <div class="col-md-12">
-                <p>Studio Cosplay is a 501(c)(3) nonprofit organization located in the DC metro area whose mission  is to promote community through the art of costuming by providing workspace, opportunity, and education. Studio Cosplay is opening a community-operated workshop in 2015 where cosplayers can connect and exchange ideas, share resources and knowledge, collaborate on projects, take instructional classes and hands-on workshops, and have the space and tools to work on costumes. Our workshop will be based in the DC metro area and will welcome all cosplayers, costume designers, LARPers, photographers, artists, and anyone interested in learning about costuming.</p>
-                <h1>Tell Me More!</h1>
+                <p class="black">Studio Cosplay is a 501(c)(3) nonprofit organization located in the DC metro area whose mission  is to promote community through the art of costuming by providing workspace, opportunity, and education. Studio Cosplay is opening a community-operated workshop in 2015 where cosplayers can connect and exchange ideas, share resources and knowledge, collaborate on projects, take instructional classes and hands-on workshops, and have the space and tools to work on costumes. Our workshop will be based in the DC metro area and will welcome all cosplayers, costume designers, LARPers, photographers, artists, and anyone interested in learning about costuming.</p>
                 </div>
-                <div class="col-md-3"></div><div class="col-md-6">
-                <form id="mailing-list-form" role="form" action="https://docs.google.com/forms/d/1lRJ6ktsDnMhwPFuH5bCg_sRJfvULYftTgso7osCxrNU/formResponse" method="POST">
-                    <div class="form-group row">
-                        <div class="col-xs-5 col-sm-7 text-left">
-                            <label for="entry_309242874">Email Address:</label>
-                        </div>
-                        <div class="col-xs-7 col-sm-5">
-                            <input type="email" class="form-control" id="entry_309242874" name="entry.309242874" placeholder="email@domain.com" required>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-xs-10 col-sm-7 text-left">
-                            <label for="group_2101776408_1">Updates on Studio Cosplay progress:</label>
-                        </div>
-                        <div class="col-xs-2  col-sm-5">
-                            <input type="checkbox" name="entry.2101776408" value="Updates on Studio Cosplay progress" id="group_2101776408_1" role="checkbox" class="ss-q-checkbox">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-xs-10 col-sm-7 text-left">
-                            <label for="group_2101776408_2">Opportunities to help out:</label>
-                        </div>
-                        <div class="col-xs-2  col-sm-5">
-                            <input type="checkbox" name="entry.2101776408" value="Opportunities to help out" id="group_2101776408_2" role="checkbox" class="ss-q-checkbox">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <button type="submit" name="submit" id="ss-submit" class="btn btn-large btn-primary">Sign Me Up! &nbsp;&#94;&#95;&#94;</button>
-                    </div>
-                </form>
-                </div><div class="col-md-3"></div>
                 <div class="col-md-12">
                     <br />
-                    <p class="intro">Show your support and spread the word! Like us on Facebook for updates on our status and watch for our Kickstarter in early 2015 or donate today!</p>
+                    <p class="intro" class="shadowy">Show your support and spread the word! Like us on Facebook for updates on our status and watch for our Kickstarter in early 2015 or donate today!</p>
                     <br />
+                </div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-3">
 <iframe id="fb-iframe" seamless src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fstudiocosplay&width&layout=button&action=like&show_faces=true&share=true&height=80&appId=2345574733"></iframe>
+                </div>
+                <div class="col-sm-3">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="52HTX9WFZX38W">
@@ -131,6 +133,7 @@
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
                 </div>
+                <div class="col-sm-3"></div>
             </div> 
         </div> 
     </div> 
@@ -168,16 +171,18 @@
         <div class="container">
             <div class="row">
                 <div class="inner">
-                    <h1>Watch for our Kickstarter</h1><br />
-                    <p class="intro">
+                    <h1>Watch for our Kickstarter</h1>
+                    <br />
+                    <p>
                     Our Kickstarter campaign is targeted to launch February 2015 to cover first year’s expenses; including the physical space (rent, utilities, etc.), equipment (machines, tools, furniture, etc.), security / safety (site access, respirators, etc.), and administrative costs (website, insurance, Kickstarter rewards, etc.).
                     </p>
-                    <p class="intro">
+                    <p>
                     We have a long wish list and many stretch goals, including a classroom area, sewing stations, airbrush and painting stations, fabrication stations with a 3D printer, and green screen for a photography area.
                     </p>
                     <p> 
 Currently, we are only accepting monetary donations. Once we have a physical space, we will gladly accept equipment, fabric, notions, and anything else you’d like to share with the community!
                     </p>
+                    <br />
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
 <input type="hidden" name="hosted_button_id" value="52HTX9WFZX38W">
@@ -185,6 +190,27 @@ Currently, we are only accepting monetary donations. Once we have a physical spa
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
                 </div>
+                <div class="col-md-12">
+                    <br />
+                    <br />
+                    <br />
+                    <p class="intro shadowy">
+                        Want to receive updates, announcements, and opportunities to help out by email? Join our mailing list!
+                    </p>
+                </div>
+                <div class="col-md-3"></div><div class="col-md-6">
+                <form id="not-mailing-list-form" role="form" action="https://docs.google.com/forms/d/1lRJ6ktsDnMhwPFuH5bCg_sRJfvULYftTgso7osCxrNU/formResponse" method="POST">
+                    <div class="form-group row">
+                        <label for="entry_309242874">Email Address:</label>
+                        <input type="email" class="form-control" id="entry_309242874" name="entry.309242874" placeholder="email@domain.com" required>
+                    </div>
+                    <input type="hidden" name="entry.2101776408" value="Updates on Studio Cosplay progress" id="group_2101776408_1">
+                    <input type="hidden" name="entry.2101776408" value="Opportunities to help out" id="group_2101776408_2">
+                    <div class="form-group row">
+                        <button type="submit" name="submit" id="ss-submit" class="btn btn-large btn-primary">Sign Me Up!</button>
+                    </div>
+                </form>
+                </div><div class="col-md-3"></div>
             </div>
         </div>
     </div>
