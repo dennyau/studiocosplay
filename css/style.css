@@ -24,7 +24,7 @@ h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;text-r
 
 /* Since positioning the image, we need to help out the caption */
 .carousel {
-  margin-top: 50px;
+  margin-top: 55px;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -120,25 +120,33 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
     max-width: 600px;
     margin: auto;
 }
-/* v2.1.2, v2.1.3 */
-.carousel-inner img {
-    min-height: 320px;
-    min-width: 100%;
+#home .carousel-caption {
+    height: 100%;
+    right: 7%;
+    left: 7%;
+    bottom: 0;
+
+    /* flexbox backwards compatibility */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-align: center;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
-.carousel-inner .active .overflow-active {
-    max-height: 320px;
-    overflow: hidden;
-}
-.carousel-inner img {
-    min-height: 320px;
-    min-width: 100%;
-    height: auto;
-    opacity: 0.35;
-    filter: alpha(opacity=35); /* For IE8 and earlier */
-}
-.carousel-caption p {
+#home .carousel-caption p {
     font-size: 19px;
+    font-size: 1em;
+    color: #545454;
 }
+#home .carousel-caption a {
+    color: #4181ba;
+}    
 #fb-iframe {
     width: 100px;
     border: none;
@@ -148,25 +156,69 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
     font-size: 25px;
 }
 
-/* v2.1.4 */
 #mailing-list-form {
     border: 2px solid #357ebd;
     border-radius: 4px;
     padding: 2%;
 }
 
-/* iphone and up */
-@media (max-width: 360px) {
-    ol.carousel-indicators {
-        bottom: -10px;
+.flex div {
+    margin: 0 auto;
+}
+.black {
+    color: #000;
+}
+.shadowy {
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-svg {
+    width: 108%;
+}
+
+/* above tablet */
+@media (min-width: 769px) {
+    #fb-iframe {
+        margin-top: 10px;
     }
+    .profile {
+        width: 336px;
+    }
+    #home .carousel-caption h1 {
+        font-size: 5em;
+    }
+    #home .carousel-caption p {
+        font-size: 2em;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    ol.carousel-indicators {
+        bottom: -2%;
+    }
+}
+/* carousel prior to tablets */
+@media (max-width: 599px) {
+    #home .carousel-caption h1 {
+        font-size: 1.2em;
+    }
+    #home .carousel-caption p {
+        font-size: .6em;
+    }
+}
+
+/* phones */
+@media (max-width: 414px) {
+    #home .carousel-caption {
+        right: 5%;
+        left: 5%;
+    }
+    ol.carousel-indicators {
+        bottom: -6%;
+    }
+
     #studioCosplay {padding: 10px 0; }
     
     .socialicon a {
         margin-right: 10px;
-    }
-    /* 2.1.2 */
-    .carousel-caption p {
-        font-size: 15px;
     }
 }
