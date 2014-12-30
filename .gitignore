@@ -22,3 +22,9 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# crud left by killed ssh sessions
+*.swp
+
+# files
+ignoreme/
