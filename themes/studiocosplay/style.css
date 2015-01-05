@@ -1,0 +1,18 @@
+/*
+Theme Name: Studio Cosplay
+Theme URI: https://github.com/dennyau/studiocosplay
+Author: Dennis Yau
+Author URI: https://github.com/dennyau/
+Description: Responsive template for the Studio Cosplay kickstarter, based off the Colorful Flat template by http://www.tb3.co.in/
+Version: 3.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: studio, cosplay, makerspace, pink, blue, white, green, responsive-layout, one page
+Text Domain: studiocosplay
+*/
+
+/**** Bootstrap core CSS ****/
+@import url("css/bootstrap.min.css");
+
+/**** Modified Colorful Flat ****/
+@import url("css/style.css");
