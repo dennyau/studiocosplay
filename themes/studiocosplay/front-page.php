@@ -1,31 +1,6 @@
 <?php
 get_header();
 ?>
-<body>
-
-      <!-- Static navbar -->
-      <div id="navigationSection" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" rel="#" title="Studio Cosplay" href="#"><img height="41" id="studio-cosplay-logo" src="<?php echo $img_dir; ?>studio-cosplay-logo.png" /></a>
-          </div>
-          <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#ourMission">What We Do</a></li>
-                <li><a href="#meetOurTeam">Our Story</a></li>
-                <li><a href="mascot-contest.html">MASCOT Contest</a></li>
-                <li><a href="#contactUs">Contact Us</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </div>
 
     <div id="home" class="carousel slide" data-ride="carousel" >
         <div class="carousel-inner">

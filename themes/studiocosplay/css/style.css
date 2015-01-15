@@ -14,6 +14,7 @@
 /* Colorful Flat */
 body{ background:#a5d2da; padding:0; color: #454545;
       font-family: 'Bubbler One', sans-serif;
+    padding-top: 50px; /* account for navbar */
 }
 a,a:hover{text-decoration:none; color:#FE5214}
 h2,h3{color:#FE5214; text-rendering: optimizelegibility; }
@@ -21,12 +22,6 @@ h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;text-r
 
 .clr{clear:both}
 .cntr{text-align:center}
-
-/* Since positioning the image, we need to help out the caption */
-.carousel {
-  margin-top: 55px;
-}
-
 .carousel-control.left, .carousel-control.right {
   background-image: none;
 }
@@ -42,6 +37,22 @@ h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;text-r
 #ourMission h2{ color:#000; }
 #ourMission p { color: #fff; font-size: 19px; line-height: 27px; margin: 15px 0; }
 #ourMission .span6, #contactUs .span6{ float:none; margin:0 auto; text-align:center;}
+
+.green-background {
+    background: #99d4a5;
+}
+.pink-background {
+    background: #ddb3c2;
+}
+.title-banner {
+    padding: 27px 0;
+    height: auto;
+}
+.title-banner h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
 
 #meetOurTeam{ padding:70px 0 ; background:#ddb3c2;  text-align: center; }
 #meetOurTeam h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
@@ -95,8 +106,6 @@ a.html5{ height:56px; width:56px; background:url(../img/instagram_F.png) no-repe
 a.icon2{ height:56px; width:56px; background:url(../img/email_F.png) no-repeat center center;display:inline-block;}
 
 /* Studio Cosplay */
-
-/* fit logo to navbar */
 .navbar-brand {
     padding: 7px 15px;
 }
@@ -177,6 +186,18 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
 
 /* above tablet */
 @media (min-width: 769px) {
+    body {
+        padding-top: 75px;  /* account for the navbar */
+    }
+    .navbar {
+        min-height: 75px;
+    }
+    .carousel {
+      margin-top: 15px;
+    }
+    #studio-cosplay-logo {
+        max-height: 64px;
+    }
     #fb-iframe {
         margin-top: 10px;
     }

@@ -14,7 +14,7 @@ $js_dir = $theme_dir . '/js/';
     <meta name="author" content="Studio Cosplay">
     <meta name="keywords" content="Studio Cosplay, Makerspace, Maryland, Cosplay Workshop, Cosplay Commmunity, Mobile Cosplay Support, Kickstarter, Worbla, Costume, Costuming, Wig styling, Comic Book, Prop Making, Projects, Photography, Green Screen, Cosplayer, Liz Gmaz, Sabrina Maizland, Daria Medved, Stefanie Hackenberg">
     <meta name="google-site-verification" content="JG5wqGPBeqN-NtPViiI2pT4UCEjLcU4ygDokq9ky7GU" />
-    <link rel="icon" href="<?php theme_img('favicon.ico'); ?>">
+    <link rel="icon" href="<?php $img_dir . 'favicon.ico'; ?>">
 
     <title><?php wp_title(''); ?></title>
 
@@ -27,3 +27,40 @@ $js_dir = $theme_dir . '/js/';
     <!-- wordpress theme -->
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
 </head>
+<body>
+      <!-- Static navbar -->
+      <div id="navigationSection" class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" rel="#" title="Studio Cosplay" href="#"><img id="studio-cosplay-logo" src="<?php echo $img_dir . 'studio-cosplay-logo.png'; ?>" /></a>
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+            <?php
+                $menu_name = 'header-menu';
+
+                if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
+                    $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+
+                    $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+                    foreach ( (array) $menu_items as $key => $menu_item ) {
+                        $title = $menu_item->title;
+                        $url = $menu_item->url;
+                        $menu_list .= '<li><a href="' . $url . '">' . $title . '</a></li>';
+                    }
+                } else {
+                    $menu_list = '<li>Menu "' . $menu_name . '" not defined.</li>';
+                }
+                echo $menu_list;
+            ?>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </div>
