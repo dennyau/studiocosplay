@@ -38,7 +38,7 @@ $js_dir = $theme_dir . '/js/';
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" rel="#" title="Studio Cosplay" href="#"><img id="studio-cosplay-logo" src="<?php echo $img_dir . 'studio-cosplay-logo.png'; ?>" /></a>
+            <a class="navbar-brand" rel="#" title="Studio Cosplay" href="/"><img id="studio-cosplay-logo" src="<?php echo $img_dir . 'studio-cosplay-logo.png'; ?>" /></a>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">

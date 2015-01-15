@@ -257,6 +257,14 @@ Stefanie Hackenberg has been cosplaying since 1998, and has been featured on pro
             <a class="twitter" href="https://twitter.com/FaeriesWBCosplay"></a>
         </div>
     </div>
+    <div class="row">
+        <div class="col-xs-12">
+        <?php
+            $sidebar = 'homepage-recentposts-widgets';
+            if (is_active_sidebar($sidebar)) { dynamic_sidebar($sidebar); }
+        ?>
+        </div>
+    </div>
 </div>
 </div>
 </div>

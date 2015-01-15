@@ -39,3 +39,16 @@ function register_my_menu() {
   register_nav_menu('header-menu',__( 'Header Menu' ));
 }
 add_action( 'init', 'register_my_menu' );
+
+// Widget Sidebars
+register_sidebar(
+    array(
+        'id'            => 'homepage-recentposts-widgets',
+        'name'          => 'Homepage Recent Posts slot',
+        'description'   => 'Homepage Recent Posts slot',
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => ''
+    )
+);
