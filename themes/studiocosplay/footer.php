@@ -6,6 +6,7 @@
             <div class="col-md-12 cntr">
                 <h1>We &lt;3 you, talk to us!</h1>
                 <p>Have a great idea or a question? We'd love to hear it!</p>
+                <p>Email us at <a href="mailto:contactus@studiocosplay.org" target="_target">contactus@studiocosplay.org</a> or use the form below.</p>
                 <form id="contact-us-form" role="form" action="https://docs.google.com/forms/d/1yljTsrO4C4cQwtQzoYCbXbkDkXeVxQXezf88qdGBGyQ/formResponse" method="POST">
                     <div class="form-group">
                         <label for="entry_100831364">Email Address:</label>
