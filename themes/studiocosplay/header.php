@@ -25,6 +25,7 @@ $js_dir = $theme_dir . '/js/';
     <![endif]-->
 
     <!-- wordpress theme -->
+    <link href='http://fonts.googleapis.com/css?family=Titan+One' rel='stylesheet' type='text/css'>
     <link href="<?php echo get_stylesheet_uri(); ?>" rel="stylesheet">
 </head>
 <body>

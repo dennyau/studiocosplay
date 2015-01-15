@@ -47,6 +47,7 @@ h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;text-r
 .title-banner {
     padding: 27px 0;
     height: auto;
+    font-family: 'Titan One', cursive;
 }
 .title-banner h1 {
     font-size: 60px;
