@@ -3,6 +3,8 @@
 $here = dirname(__FILE__);
 require_once $here . '/customizer/includes.php';
 
+// Theme Capabilities activate
+add_theme_support('post-thumbnails');
 
 // Core theme uris
 $theme_dir = get_stylesheet_directory_uri();
