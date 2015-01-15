@@ -1,4 +1,8 @@
 <?php
+// Customzier
+$here = dirname(__FILE__);
+require_once $here . '/customizer/includes.php';
+
 
 // Core theme uris
 $theme_dir = get_stylesheet_directory_uri();

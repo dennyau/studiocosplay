@@ -8,9 +8,17 @@ get_header();
                 <object class="carousel-svg" type="image/svg+xml" data="<?php echo $img_dir; ?>decorative-frame-yellow.svg"></object>
                 <div class="carousel-caption flex">
                     <div>
-                        <h1>Hooray!</h1>
+                        <h1>
+                        <?php
+                            echo get_theme_mod('carousel1_title', 'Hooray!');
+                        ?>
+                        </h1>
+                        <?php
+                            echo get_theme_mod('carousel1_caption','
                         <p>We are officially a 501(c)(3) non-profit organization and all donations are tax deductible.</p>
                         <p><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=52HTX9WFZX38W" target="_blank">Click here to donate today!</a></p>
+                            ');
+                        ?>
                     </div>
                 </div>
             </div>
@@ -18,9 +26,17 @@ get_header();
                 <object class="carousel-svg" type="image/svg+xml" data="<?php echo $img_dir; ?>decorative-frame-green.svg"></object>
                 <div class="carousel-caption flex">
                     <div>
-                        <h1>We have a NEW logo!</h1>
+                        <h1>
+                        <?php
+                            echo get_theme_mod('carousel2_title', 'We have a NEW logo!');
+                        ?>
+                        </h1>
+                        <?php
+                            echo get_theme_mod('carousel2_caption','
                         <p>A big thank you to independent game developer Frogdice for lending their Graphic Designer to create our official logo.</p>
                         <p>Check them out at <a href="http://frogdice.com" target="_blank">frogdice.com</a></p>
+                            ');
+                        ?>
                     </div>
                 </div>
             </div>
@@ -28,8 +44,16 @@ get_header();
                 <object class="carousel-svg" type="image/svg+xml" data="<?php echo $img_dir; ?>decorative-frame-pink.svg"></object>
                 <div class="carousel-caption flex">
                     <div>
-                        <h1>MASCOT CONTEST!</h1>
+                        <h1>
+                        <?php
+                            echo get_theme_mod('carousel3_title', 'MASCOT CONTEST!');
+                        ?>
+                        </h1>
+                        <?php
+                            echo get_theme_mod('carousel3_caption','
                         <p>Help us design our mascot and win a $100 gift card to Amazon.com. See official rules <a href="mascot-contest.html">here</a>.</p>
+                            ');
+                        ?>
                     </div>
                 </div>
             </div>

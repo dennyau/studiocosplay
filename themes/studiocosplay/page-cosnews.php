@@ -47,6 +47,7 @@ get_header();
                 <div class="navigation col-xs-12">
                     <p class="pager-pages">
                         <?php
+/*
                         global $wp_query;
 
                         $big = 999999999; // need an unlikely integer
@@ -81,6 +82,7 @@ get_header();
                                 echo " | $pgl";
                             }
                         }
+*/
                         ?>
                     </p>
                 </div>

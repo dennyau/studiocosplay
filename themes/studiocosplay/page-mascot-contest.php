@@ -2,14 +2,16 @@
 
 get_header();
 ?>
-
-    <div class="title-banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 cntr">
-                    <h1><?php the_title(); ?></h1>
+    <div id="home" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="overflow-active" style="height: 130px;">
+                    <img src="<?php echo $img_dir . 'level-up-cosplay.png'; ?>" alt="Studio Cosplay's Mascot Contest!" />
                 </div>
-            </div>
+                <div class="carousel-caption">
+                    <h1 style="font-size: 32px;"><?php get_the_title(); ?></h1>
+                </div>
+             </div>
         </div>
     </div>
 
