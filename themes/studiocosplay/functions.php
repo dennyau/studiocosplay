@@ -1,10 +1,10 @@
 <?php
 // Environment flags
 $site_environment = 'dev';
-if (home_url() === 'http://www.studiocosplay.org') $site_environment = 'production';
+if (home_url() == 'http://www.studiocosplay.org') $site_environment = 'production';
 function is_live() {
     $rt = false;
-    if ($site_environment = 'production') $rt = true;
+    if ($site_environment === 'production') $rt = true;
     return $rt;
 }
 
