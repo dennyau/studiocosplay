@@ -170,24 +170,46 @@ Currently, we are only accepting monetary donations. Once we have a physical spa
         </div>
     </div>
 
-<?php 
-$sidebar = 'homepage-recentposts-widgets';
-if (is_active_sidebar($sidebar)) { 
-?>
     <div id="meetOurTeam">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12">
-                <?php
-                    dynamic_sidebar($sidebar);
-                ?>
-                </div>
+            <?php
+            // 3 Cards of the most recent posts!
+            global $post;
+            $current_page_slug = $post->post_name;
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+            query_posts( 'post_type=post&paged=' . $paged );
+            $counter = 0;
+            $max_count = 3;
+
+            if ( have_posts() ) {
+                while ( have_posts() ) {
+                    the_post();
+                    $counter++;
+                    ?>
+                    <div class="pin col-sm-6 col-md-4 col-xs-12">
+                        <h4><a href="<?php the_permalink(); ?>"><?php the_title_attribute(); ?></a></h4>
+                        <h6><?php the_time( 'F jS, Y' ); ?></h6>
+                        <?php
+                            if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+                                the_post_thumbnail();
+                            }
+                        ?>
+                        <h7><?php the_author(); ?></h7>
+                        <p>
+                            <?php the_excerpt(); ?>
+                            <a href="<?php the_permalink(); ?>">Read More &raquo;</a>
+                        </p>
+                    </div>
+                    <?php
+                    if ($counter >= $max_count) break;
+                }
+            }
+            ?>
             </div>
         </div>
     </div>
-<?php
-} // end sidebar homepage-recentposts-widgets
-?>
 
 </div>
 <?php
