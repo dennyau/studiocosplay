@@ -68,8 +68,20 @@ get_header();
     <div id="studioCosplay">     
         <div class="container">  
             <div class="row"> 
-                <div class="col-md-12">
-                <p class="black">Studio Cosplay is a 501(c)(3) nonprofit organization located in the DC metro area whose mission  is to promote community through the art of costuming by providing workspace, opportunity, and education. Studio Cosplay is opening a community-operated workshop in 2015 where cosplayers can connect and exchange ideas, share resources and knowledge, collaborate on projects, take instructional classes and hands-on workshops, and have the space and tools to work on costumes. Our workshop will be based in the DC metro area and will welcome all cosplayers, costume designers, LARPers, photographers, artists, and anyone interested in learning about costuming.</p>
+                <div class="col-md-12" class="black">
+                <?php // Grab the page contents of "studiocosplay" subpage of "our-story"
+                    $studioCosplay = get_posts(
+                        array(
+                            'name'      => 'studiocosplay',
+                            'post_type' => 'page'
+                        )
+                    );
+                    if (! empty($studioCosplay) ){
+                        echo $studioCosplay[0]->post_content;
+                    } else { ?>
+                <p class="black sc-default">Studio Cosplay is a 501(c)(3) nonprofit organization located in the DC metro area whose mission  is to promote community through the art of costuming by providing workspace, opportunity, and education. Studio Cosplay is opening a community-operated workshop in 2015 where cosplayers can connect and exchange ideas, share resources and knowledge, collaborate on projects, take instructional classes and hands-on workshops, and have the space and tools to work on costumes. Our workshop will be based in the DC metro area and will welcome all cosplayers, costume designers, LARPers, photographers, artists, and anyone interested in learning about costuming.</p>
+                    <?php }
+                ?>
                 </div>
                 <div class="col-md-12">
                     <br />
@@ -126,7 +138,17 @@ get_header();
         <div class="container">
             <div class="row">
                 <div class="inner">
-                    <h1>Watch for our Kickstarter</h1>
+                <?php // Grab the page contents of "today" subpage of "our-story"
+                    $today = get_posts(
+                        array(
+                            'name'      => 'today',
+                            'post_type' => 'page'
+                        )
+                    );
+                    if (! empty($today) ){
+                        echo $today[0]->post_content;
+                    } else { ?>
+                    <h1 class="sc-default">Watch for our Kickstarter</h1>
                     <br />
                     <p>
                     Our Kickstarter campaign is targeted to launch February 2015 to cover first year’s expenses; including the physical space (rent, utilities, etc.), equipment (machines, tools, furniture, etc.), security / safety (site access, respirators, etc.), and administrative costs (website, insurance, Kickstarter rewards, etc.).
@@ -137,6 +159,7 @@ get_header();
                     <p> 
 Currently, we are only accepting monetary donations. Once we have a physical space, we will gladly accept equipment, fabric, notions, and anything else you’d like to share with the community!
                     </p>
+                    <?php } ?>
                     <br />
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
