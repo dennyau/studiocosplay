@@ -61,7 +61,7 @@ register_sidebar(
         'description'   => 'Homepage Recent Posts slot',
         'before_widget' => '',
         'after_widget'  => '',
-        'before_title'  => '<h1>',
+        'before_title'  => '<h1 class="widget-title">',
         'after_title'   => '</h1>'
     )
 );

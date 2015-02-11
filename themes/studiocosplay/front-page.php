@@ -213,13 +213,12 @@ Currently, we are only accepting monetary donations. Once we have a physical spa
                     ?>
                     <div class="pin col-sm-6 col-md-4 col-xs-12">
                         <h4><a href="<?php the_permalink(); ?>"><?php the_title_attribute(); ?></a></h4>
-                        <h6><?php the_time( 'F jS, Y' ); ?></h6>
                         <?php
                             if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
                                 the_post_thumbnail();
                             }
                         ?>
-                        <h7><?php the_author(); ?></h7>
+                        <h6><?php the_time( 'F jS, Y' ); ?></h6>
                         <p>
                             <?php the_excerpt(); ?>
                             <a href="<?php the_permalink(); ?>">Read More &raquo;</a>

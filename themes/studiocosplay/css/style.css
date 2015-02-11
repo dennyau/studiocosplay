@@ -184,6 +184,12 @@ div.navbar, div.container-fluid, div.navbar-header, div.navbar-collaspe {
 .carousel-svg {
     width: 108%;
 }
+.widget-title {
+    font-weight: bold;
+}
+.widget-title + ul > li {
+    font-size: 24px;
+}
 
 /* above tablet */
 @media (min-width: 769px) {
