@@ -1,6 +1,6 @@
 <?php
 // Core theme uris
-$theme_dir = get_stylesheet_directory_uri();
+$theme_dir = cdn('/wp-content/themes/studiocosplay');
 $img_dir = $theme_dir . '/img/';
 $js_dir = $theme_dir . '/js/';
 ?>

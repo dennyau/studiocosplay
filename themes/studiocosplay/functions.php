@@ -65,3 +65,31 @@ register_sidebar(
         'after_title'   => '</h1>'
     )
 );
+
+// CDN hooks
+function cdn($asset_uri) {
+    $rt = '';
+    if(! empty($asset_uri) ){
+        $rt = $asset_uri;
+    }
+
+    if (is_live()) {
+        $rt = '//cdn.studiocosplay.org' . $asset_uri;
+    } elseif (home_url() == 'http://testing.studiocosplay.org') {
+        $rt = '//cdn.testing.studiocosplay.org' . $asset_uri;
+    }
+    return $rt;
+}
+function cdn_url() {
+    $dir = '/wp-content/uploads';
+    $rt = $dir;
+
+    if (is_live()) {
+        $rt = '//cdn.studiocosplay.org' . $dir;
+    } elseif (home_url() == 'http://testing.studiocosplay.org') {
+        $rt = '//cdn.testing.studiocosplay.org' . $dir;
+    }
+    return $rt;
+}
+add_filter( 'pre_option_upload_url_path', 'cdn_url' );
+

@@ -41,12 +41,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="<?php echo '/wp-content/themes/studiocosplay/js/jquery.min.js'; ?>"></script>
-    <script src="/wp-content/themes/studiocosplay/js/bootstrap.min.js"></script>
+    <script src="<?php echo cdn('/wp-content/themes/studiocosplay/js/jquery.min.js'); ?>"></script>
+    <script src="<?php echo cdn('/wp-content/themes/studiocosplay/js/bootstrap.min.js'); ?>"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/wp-content/themes/studiocosplay/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="<?php echo cdn('/wp-content/themes/studiocosplay/js/ie10-viewport-bug-workaround.js'); ?>"></script>
 
-    <?php if (is_live()) { ?><!--<?php } ?>
+    <?php if (! is_live()) { ?><!--<?php } ?>
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -56,6 +56,6 @@
         ga('create', 'UA-55297291-1', 'auto');
         ga('send', 'pageview');
     </script>
-    <?php if (is_live()) { ?>--><?php } ?>
+    <?php if (! is_live()) { ?>--><?php } ?>
 </body>
 </html>
