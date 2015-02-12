@@ -86,6 +86,7 @@ get_header();
                 <div class="col-md-12">
                     <br />
                     <p class="intro" class="shadowy">Show your support and spread the word! Like us on Facebook for updates on our status and watch for our Kickstarter in early 2015 or donate today!</p>
+                    <iframe frameborder="0" height="311px" src="https://www.kickstarter.com/pages/geekdad/widget.html" width="448px"></iframe>
                     <br />
                 </div>
                 <div class="col-sm-3"></div>
