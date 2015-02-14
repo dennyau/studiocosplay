@@ -85,12 +85,12 @@ get_header();
                 </div>
                 <div class="col-md-12">
                     <br />
-                    <p class="intro" class="shadowy">Show your support and spread the word! Like us on Facebook for updates on our status and watch for our Kickstarter in early 2015 or donate today!</p>
+                    <p class="intro" class="shadowy">Show your support and spread the word! Like us on Facebook for updates on our status and donate to our Kickstarter today!</p>
                     <br />
                 </div>
                 <div class="col-sm-3"></div>
                 <div class="col-sm-3">
-<a href="https://www.kickstarter.com/projects/6846446/studio-cosplay-a-makerspace-by-cosplayers-for-cosp"><button type="button" class="btn btn-success">Kickstarter!</button></a>
+<a href="https://www.kickstarter.com/projects/6846446/studio-cosplay-a-makerspace-by-cosplayers-for-cosp"><button type="button" style="margin-bottom: 10px" class="btn btn-success">Kickstarter!</button></a>
                 </div>
                 <div class="col-sm-3">
 <iframe id="fb-iframe" seamless src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fstudiocosplay&width&layout=button&action=like&show_faces=true&share=true&height=80&appId=2345574733"></iframe>
