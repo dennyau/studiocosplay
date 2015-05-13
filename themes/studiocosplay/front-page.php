@@ -90,12 +90,8 @@ get_header();
                 </div>
                 <div class="col-sm-3"></div>
                 <div class="col-sm-3">
-<a href="https://www.kickstarter.com/projects/6846446/studio-cosplay-a-makerspace-by-cosplayers-for-cosp"><button type="button" style="margin-bottom: 10px" class="btn btn-success">Kickstarter!</button></a>
-                </div>
-                <div class="col-sm-3">
 <iframe id="fb-iframe" seamless src="http://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fstudiocosplay&width&layout=button&action=like&show_faces=true&share=true&height=80&appId=2345574733"></iframe>
                 </div>
-<!--
                 <div class="col-sm-3">
 <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 <input type="hidden" name="cmd" value="_s-xclick">
@@ -104,7 +100,6 @@ get_header();
 <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 </form>
                 </div>
--->
                 <div class="col-sm-3"></div>
             </div> 
         </div> 
