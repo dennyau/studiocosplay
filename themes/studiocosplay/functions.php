@@ -2,7 +2,7 @@
 // Environment flags
 function is_live() {
     $rt = false;
-    if (home_url() == 'http://www.studiocosplay.org') $rt = true;
+    if (home_url() == 'https://www.studiocosplay.org') $rt = true;
     return $rt;
 }
 
@@ -75,7 +75,7 @@ function cdn($asset_uri) {
 
     if (is_live()) {
         $rt = '//cdn.studiocosplay.org' . $asset_uri;
-    } elseif (home_url() == 'http://testing.studiocosplay.org') {
+    } elseif (home_url() == 'https://testing.studiocosplay.org') {
         $rt = '//cdn.testing.studiocosplay.org' . $asset_uri;
     }
     return $rt;
@@ -86,7 +86,7 @@ function cdn_url() {
 
     if (is_live()) {
         $rt = '//cdn.studiocosplay.org' . $dir;
-    } elseif (home_url() == 'http://testing.studiocosplay.org') {
+    } elseif (home_url() == 'https://testing.studiocosplay.org') {
         $rt = '//cdn.testing.studiocosplay.org' . $dir;
     }
     return $rt;
